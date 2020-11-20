@@ -7,9 +7,12 @@ public class YandexMapFactory: NSObject, FlutterPlatformViewFactory {
 
   public init(registrar: FlutterPluginRegistrar) {
     self.pluginRegistrar = registrar
+    super.init()
   }
 
-  public func create(withFrame frame: CGRect, viewIdentifier viewId: Int64, arguments args: Any?) -> FlutterPlatformView {
+  public func create(withFrame frame: CGRect,
+                     viewIdentifier viewId: Int64,
+                     arguments args: Any?) -> FlutterPlatformView {
     return YandexMapController(id: viewId, frame: frame, registrar: self.pluginRegistrar)
   }
 }

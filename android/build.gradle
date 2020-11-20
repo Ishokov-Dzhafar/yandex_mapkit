@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
     }
 }
 
@@ -34,5 +34,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.yandex.android:mapkit:3.4.0'
+    implementation 'com.yandex.android:mapkit:3.5.0'
+    implementation 'com.yandex.android:search:3.5.0'
 }

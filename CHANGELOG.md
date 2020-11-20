@@ -1,3 +1,54 @@
+## 0.4.0
+
+* Add support for v2 android embedder
+* Add night mode toggle for `YandexMapController`
+* Add `onMapTap` and `onMapLongTap` callbacks to `YandexMap`
+* **Breaking change**. Callback signature for `Placemark.onTap` has been changed.
+Instead of returning latitude and longitude, it now returns a `Point`
+
+## 0.3.11
+
+* Fix memory leak on iOS
+
+## 0.3.10
+
+* Fix Dart int, bool, double, float data conversion in Swift
+
+## 0.3.9
+
+* Update and lock YandexMapkit version to 3.5 for iOS and Android
+* Fix example not working on newer flutter versions
+
+## 0.3.8
+
+* Add support for comparing objects added by YandexMapkit[#46, Goolpe]
+
+## 0.3.7
+
+* Add Polygon support [#36, umcherrel]
+* Add Placemark options [#36, umcherrel]
+* Add user location options [#36, umcherrel]
+* Implement MapkitSearch [#36, umcherrel]
+* Add camera tracing [#36, umcherrel]
+
+## 0.3.6
+
+* Set minimum flutter version to 1.10.0
+* Update iOS and Android dependencies
+* Fix YandexMap not compiling on iOS
+* Fix YandexMap not showing when `onMapCreated` is not defined [#38, DCrow]
+* Minor fixes
+
+## 0.3.5
+
+* Add Polyline support [#33, elisar4]
+* Add support for using binary image as Placemark icons [#30, elisar4]
+* Refactor example app [#31, DCrow]
+
+## 0.3.4
+
+* Add getting target point(center point) [#27, Ishokov-Dzhafar]
+
 ## 0.3.3
 
 * Add linter and fix linter errors[#23, vanyasem]
